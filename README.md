@@ -11,7 +11,7 @@
 
 ## 开发环境及工具
 
-* 基于 RN 0.49；
+* 基于 RN 0.57.8；
 * macOS Mojave 10.14.2；Xcode 10.1；Android Studio 3.2；
 * 安卓（7 及以上）/ iOS（12 及以上） 已测试。
 
