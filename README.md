@@ -15,8 +15,8 @@
 * macOS Mojave 10.14.2；Xcode 10.1；Android Studio 3.2；
 * 安卓（7 及以上）/ iOS（12 及以上） 已测试。
 
-* 插件如下：
- "dependencies": {
+* 插件如下：<br/>
+ "dependencies": {<br/>
     "@ant-design/react-native": "^3.0.3",
     "react": "16.6.3",
     "react-native": "0.57.8",
