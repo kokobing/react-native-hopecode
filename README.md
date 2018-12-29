@@ -17,16 +17,16 @@
 
 * 插件如下：<br/>
  "dependencies": {<br/>
-    "@ant-design/react-native": "^3.0.3",
-    "react": "16.6.3",
-    "react-native": "0.57.8",
-    "react-native-gesture-handler": "^1.0.12",
-    "react-native-swiper": "^1.5.14",
-    "react-navigation": "^3.0.9",
-    "react-redux": "^6.0.0",
-    "redux": "^4.0.1",
-    "redux-persist": "^5.10.0"
-  }
+    "@ant-design/react-native": "^3.0.3",<br/>
+    "react": "16.6.3",<br/>
+    "react-native": "0.57.8",<br/>
+    "react-native-gesture-handler": "^1.0.12",<br/>
+    "react-native-swiper": "^1.5.14",<br/>
+    "react-navigation": "^3.0.9",<br/>
+    "react-redux": "^6.0.0",<br/>
+    "redux": "^4.0.1",<br/>
+    "redux-persist": "^5.10.0"<br/>
+  }<br/>
 
 > 没有在 windows 下运行，但 RN 本身与操作系统无关，配置好环境可以开发安卓应用。
 
