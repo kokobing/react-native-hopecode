@@ -130,19 +130,29 @@ const StackModalNavigator = (routeConfigs, navigatorConfig) => {
 };
 
 
+//首次，进入引导页
+    const AppNavigator1 = StackModalNavigator({
+      MainScreen:{screen: MainScreen,navigationOptions: {header: null,}},
+      TopTabs:{screen: TopTabs,navigationOptions: {header: null,}},
+      singlePage:{screen: singlePage},
+      
+    }, {
+      initialRouteName: 'MainScreen',
+      ...headerStyle
+    });
+    const AppContainer1 = createAppContainer(AppNavigator1);
 
-const AppNavigator = StackModalNavigator({
-  
-  MainScreen:{screen: MainScreen,navigationOptions: {header: null,}},
-  TopTabs:{screen: TopTabs,navigationOptions: {header: null,}},
-  singlePage:{screen: singlePage},
-  
-}, {
-  initialRouteName: 'MainScreen',
-  ...headerStyle
-});
-const AppContainer = createAppContainer(AppNavigator);
-
+//非首次，进入TOPTABLE
+    const AppNavigator2 = StackModalNavigator({    
+      MainScreen:{screen: MainScreen,navigationOptions: {header: null,}},
+      TopTabs:{screen: TopTabs,navigationOptions: {header: null,}},
+      singlePage:{screen: singlePage},
+      
+    }, {
+      initialRouteName: 'TopTabs',
+      ...headerStyle
+    });
+    const AppContainer2 = createAppContainer(AppNavigator2);
 
 
 class RouterScene extends Component {
@@ -150,7 +160,15 @@ class RouterScene extends Component {
   constructor(props) {
       super(props);
   }
-  render() {return (<AppContainer />);}
+  
+  render() {
+    if(this.props.userInfo.isfirstcome_){
+      return (<AppContainer1 />);
+    }else{
+      return (<AppContainer2 />);
+    }
+  
+  }
 }
 
 
