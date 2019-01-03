@@ -24,11 +24,11 @@ export default self => (
 
 
       <WhiteSpace size="md" />
-    <Button type="warning" onPress={() => self.navigation.navigate('ScreenWebviewtest')} style={{borderRadius:0}}>进入WEBVIEW测试页</Button>
+    <Button type="warning" onPress={() => self.navigation.navigate('WebviewRedux')} style={{borderRadius:0}}>进入WEBVIEW测试页</Button>
 
     <WhiteSpace size="md" />
     <Button type="warning" onPress={() =>
-        self.navigation.navigate('ScreenWebView', {
+        self.navigation.navigate('WebviewLoad', {
           url: 'https://github.com/facebook/react-native',
           title: '加载中...',
         })

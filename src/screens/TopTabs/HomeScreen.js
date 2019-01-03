@@ -17,6 +17,13 @@ import view from './HomeScreenview';
     this.navigation = props.navigation;
   }
 
+  
+  changeReduxStore(userInfo) {
+    // 设置 redux store
+    this.props.setUserInfo(userInfo);
+  }
+
+
   render() {
     return view(this);
    

@@ -1,35 +1,43 @@
 import React from 'react';
-import {StyleSheet, View, Text,Button } from 'react-native';
+import { View, Text } from 'react-native';
+import { WhiteSpace, Button } from '@ant-design/react-native';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 export default self => (
+  <View>
 
-      <View style={styles.container}>
-        <Text style={styles.welcome}>FOUNED PAGE FDSAJFDA</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={{ fontSize: 26 }}>我的名字是：{self.props.userInfo.name_}</Text>
+    <WhiteSpace size="md" style={{paddingTop:50}} />
+    <WhiteSpace size="sm" />
+    <Text style={{ fontSize: 26 }}>我的名字是：{self.props.userInfo.name_}</Text>
+    <WhiteSpace size="sm" />
+    <Text style={{ fontSize: 26 }}>我的性别是：{self.props.userInfo.gender_}</Text>
+    <WhiteSpace size="sm" />
+    <Text style={{ fontSize: 26 }}>首次登陆：{self.props.userInfo.isfirstcome_?'首次':'非首次'}</Text>
+    <WhiteSpace size="sm" />
+    <Button type="warning" onPress={() => self.changeReduxStore({ name_: '小美', gender_: '女',isfirstcome_:false })} style={{borderRadius:0}}>设置</Button>
 
+    <WhiteSpace size="sm" />
+    <Button type="warning" onPress={() => self.changeReduxStore({ name_: '游客', gender_: '男',isfirstcome_:true })} style={{borderRadius:0}}>还原</Button>
+
+    <WhiteSpace size="md" />
+    <Button type="warning" onPress={() => self.navigation.navigate('MainScreen')} style={{borderRadius:0}}>返回首页</Button>
+
+
+      <WhiteSpace size="md" />
+    <Button type="warning" onPress={() => self.navigation.navigate('WebviewRedux')} style={{borderRadius:0}}>进入WEBVIEW测试页</Button>
+
+    <WhiteSpace size="md" />
+    <Button type="warning" onPress={() =>
+        self.navigation.navigate('WebviewLoad', {
+          url: 'https://github.com/facebook/react-native',
+          title: '加载中...',
+        })
+      } style={{borderRadius:0}}>进入WEBVIEW加载页</Button>
  
 
-         <Button onPress={() => { self.props.navigation.navigate('MainScreen')  }}  title="返回" />
-      </View>
-
+    <WhiteSpace size="md" />
+    <Text style={{ width: '100%', textAlign: 'center', marginTop: 20 }}>
+      当前网络：{self.props.userInfo.connectNetType}
+    </Text>
+  </View>
 );

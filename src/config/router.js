@@ -17,7 +17,10 @@ import FoundScreen from '../screens/TopTabs/FoundScreen';//发现
 import MallScreen from '../screens/TopTabs/MallScreen';//商城
 import SettingsScreen from '../screens/TopTabs/SettingsScreen';//我的
 //注册页面-单页
-import singlePage from '../screens/singlePage/singlePage';
+import singlePage from '../screens/SinglePage/singlePage';
+//注册页面-WEBVIEW AND REDUX 
+import WebviewRedux from '../screens/WebView/WebviewRedux';//webview 测试页
+import WebviewLoad from '../screens/WebView/WebviewLoad';//webview 加载页
 
 function isIphoneX() {
   const dimen = Dimensions.get('window');
@@ -135,6 +138,8 @@ const StackModalNavigator = (routeConfigs, navigatorConfig) => {
       MainScreen:{screen: MainScreen,navigationOptions: {header: null,}},
       TopTabs:{screen: TopTabs,navigationOptions: {header: null,}},
       singlePage:{screen: singlePage},
+      WebviewRedux:{screen: WebviewRedux,navigationOptions: {headerBackTitle:null,}},
+      WebviewLoad:{screen: WebviewLoad,navigationOptions: {headerBackTitle:null,}},
       
     }, {
       initialRouteName: 'MainScreen',
@@ -147,6 +152,8 @@ const StackModalNavigator = (routeConfigs, navigatorConfig) => {
       MainScreen:{screen: MainScreen,navigationOptions: {header: null,}},
       TopTabs:{screen: TopTabs,navigationOptions: {header: null,}},
       singlePage:{screen: singlePage},
+      WebviewRedux:{screen: WebviewRedux,navigationOptions: {headerBackTitle:null,}},
+      WebviewLoad:{screen: WebviewLoad,navigationOptions: {headerBackTitle:null,}},
       
     }, {
       initialRouteName: 'TopTabs',
