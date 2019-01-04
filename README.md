@@ -33,6 +33,12 @@
 ## 本地运行
 
 1.  下载本项目，并安装依赖包；
+```bash
+git clone https://github.com/kokobing/react-native-hopecode.git
+cd react-native-hopecode
+npm install
+react-native link
+```
 2.  安装 React Native CLI 及安卓/iOS 开发环境（可参考 RN 中文网站介绍(https://reactnative.cn/docs/getting-started/)）
 
 3.  进入项目根目录，执行下面命令：
