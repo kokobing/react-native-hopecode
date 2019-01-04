@@ -28,7 +28,7 @@
      &nbsp;&nbsp;&nbsp;&nbsp; "redux-persist": "^5.10.0"<br/>
   }<br/>
 
-> 没有在 windows 下运行，但 RN 本身与操作系统无关，配置好环境可以开发安卓应用。
+
 
 ## 本地运行
 
