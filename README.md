@@ -1,6 +1,7 @@
 # react-native-hopecode
 一个自用 React Native 脚手架，具有下述特点：
 
+* Ant Design of React 蚂蚁金服设计平台
 * React Navigation V3 路由导航
 * 集成 Redux 进行状态管理，并实现本地持久化存储；
 * 判断是否首页访问APP，非首次访问进SWIPER欢迎页,首次进TABLE页；
