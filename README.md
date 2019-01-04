@@ -17,15 +17,15 @@
 
 * 插件如下：<br/>
  "dependencies": {<br/>
-     &nbsp;&nbsp; "@ant-design/react-native": "^3.0.3",<br/>
-     &nbsp;&nbsp; "react": "16.6.3",<br/>
-     &nbsp;&nbsp; "react-native": "0.57.8",<br/>
-     &nbsp;&nbsp; "react-native-gesture-handler": "^1.0.12",<br/>
-     &nbsp;&nbsp; "react-native-swiper": "^1.5.14",<br/>
-     &nbsp;&nbsp; "react-navigation": "^3.0.9",<br/>
-     &nbsp;&nbsp; "react-redux": "^6.0.0",<br/>
-     &nbsp;&nbsp; "redux": "^4.0.1",<br/>
-     &nbsp;&nbsp; "redux-persist": "^5.10.0"<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp; "@ant-design/react-native": "^3.0.3",<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp; "react": "16.6.3",<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp; "react-native": "0.57.8",<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp; "react-native-gesture-handler": "^1.0.12",<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp; "react-native-swiper": "^1.5.14",<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp; "react-navigation": "^3.0.9",<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp; "react-redux": "^6.0.0",<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp; "redux": "^4.0.1",<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp; "redux-persist": "^5.10.0"<br/>
   }<br/>
 
 > 没有在 windows 下运行，但 RN 本身与操作系统无关，配置好环境可以开发安卓应用。
