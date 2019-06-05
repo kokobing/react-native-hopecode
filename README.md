@@ -1,5 +1,5 @@
 # react-native-hopecode
-一个自用 React Native 脚手架，具有下述特点：
+一个自用 React Native 脚手架，具有下述特点：　
 
 * Ant Design of React 蚂蚁金服设计平台
 * React Navigation V3 路由导航
